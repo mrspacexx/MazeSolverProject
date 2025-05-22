@@ -1,0 +1,22 @@
+Maze, Dijkstra, A*, Greedy, Best
+maze1.txt, 6, 6, 6, 6
+maze2.txt, 0, 0, 0, 0
+maze3.txt, 5, 5, 5, 5
+
+Time and Space Complexity:
+
+Dijkstra:
+  - Time: O(V + E log V)
+  - Space: O(V)
+
+A* Search:
+  - Time: O(V log V) (depends on heuristic accuracy)
+  - Space: O(V)
+
+Greedy Best-First Search:
+  - Time: O(V log V)
+  - Space: O(V)
+  - Note: Does not guarantee optimal solution (coin total may be higher).
+
+V = Total number of accessible (non-wall) cells in the maze.
+E = Total number of possible valid movements between cells. Each cell can have up to 8 connections (including diagonal directions).
